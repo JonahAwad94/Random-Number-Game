@@ -1,4 +1,4 @@
-#include "pch.h"
+#include "pch.h" //For visual Studio 2017
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -9,7 +9,7 @@ int getUserInput(int lowerBound, int upperBound);
 
 int main()
 {
-	cout << "Enter a number to play up to. (Up to 1,000) ";
+	cout << "Enter a number to play up to. (10-1,000) ";
 	int limit = getUserInput(10, 1000);
 
 	cout << "A random number between 0 and " << limit << " has been selected. Try to guess what it is. ";
@@ -63,7 +63,7 @@ int main()
 		return 0;
 }
 
-// Get user input, check if its valid
+// Get user input, check if input is valid
 int getUserInput(int lowerBound, int upperBound)
 {
 	int num;
